@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KD0G’S STAG // INTERNAL MEMO</title>
+<style>
+:root{
+  --paper:#f2f0df; --ink:#111; --grey:#c7c7c7; --dark:#202020;
+  --blue:#243a7a; --pink:#ff63a5; --yellow:#ffe45c; --green:#9fe870;
+}
+*{box-sizing:border-box} body{margin:0;background:#777;font-family:"Courier New",monospace;color:var(--ink)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;
+background-image:radial-gradient(#000 0.5px,transparent .5px);background-size:4px 4px}
+.page{max-width:1100px;margin:24px auto;background:var(--paper);border:5px solid #111;box-shadow:12px 12px 0 #111;min-height:100vh}
+.topbar{background:#111;color:#fff;padding:7px 12px;font-weight:bold;display:flex;justify-content:space-between;font-size:12px}
+.hero{padding:28px 30px 20px;border-bottom:4px solid #111;background:linear-gradient(135deg,#f2f0df 0 70%,#ff63a5 70%)}
+.stamp{display:inline-block;border:3px solid #111;padding:6px 10px;background:#ffe45c;transform:rotate(-2deg);font-weight:bold}
+h1{font-family:Impact,"Arial Black",sans-serif;letter-spacing:2px;font-size:clamp(48px,9vw,105px);line-height:.82;margin:25px 0 18px;text-transform:uppercase}
+h2{font-family:Impact,"Arial Black",sans-serif;letter-spacing:1px;margin:0 0 8px;font-size:30px}
+.meta{display:flex;flex-wrap:wrap;gap:8px}.meta span{background:#fff;border:2px solid #111;padding:7px 10px;font-weight:bold}
+.marquee{background:var(--blue);color:#fff;border-bottom:4px solid #111;overflow:hidden;white-space:nowrap}
+.marquee div{display:inline-block;padding:8px 0;animation:scroll 18s linear infinite}
+@keyframes scroll{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:4px solid #111}.chronological{display:block}.black-divider{height:10px;background:#111}.chronological .card{border-right:0;border-bottom:4px solid #111}.chronological .card:last-child{border-bottom:0}
+.card{padding:24px;border-right:4px solid #111;border-bottom:4px solid #111;min-height:190px;position:relative}
+.card:nth-child(even){border-right:0}.card:nth-last-child(-n+2){border-bottom:0}
+.time{font-size:13px;font-weight:bold;background:#111;color:#fff;display:inline-block;padding:4px 7px;margin-bottom:12px}
+.tag{position:absolute;right:14px;top:14px;background:var(--pink);border:2px solid #111;padding:3px 6px;font-weight:bold;font-size:11px}
+.interactive{padding:25px;background:#d9d7c7;border-bottom:4px solid #111}
+.panel{background:#fff;border:4px solid #111;box-shadow:7px 7px 0 #111;padding:18px}
+input,button{font:inherit;border:3px solid #111;padding:11px 12px;background:#fff}
+input{width:min(100%,520px)}button{background:var(--yellow);font-weight:bold;cursor:pointer}
+.wordcloud{height:360px;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:8px 14px;padding:20px;margin:15px 0;background:#f7f6e9;border:3px dashed #111;overflow:hidden}
+.word{font-weight:bold;display:inline-block;line-height:1;transform:rotate(var(--r));font-size:var(--s)}
+.word:nth-child(3n){background:var(--green);padding:4px}.word:nth-child(4n){background:var(--pink);padding:4px}
+.vote{background:#111;color:#fff;padding:25px}.vote h2{color:var(--yellow)}
+.voteGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:15px 0}
+.candidate{background:#fff;color:#111;border:3px solid #fff;padding:14px;cursor:pointer;font-weight:bold;text-align:left}
+.candidate.selected{background:var(--green);border-color:var(--green)}
+.notice{font-size:12px;margin-top:10px}.footer{padding:18px;text-align:center;font-size:11px}
+@media(max-width:700px){.page{margin:0;box-shadow:none;border-width:3px}.grid{grid-template-columns:1fr}.card,.card:nth-child(even){border-right:0;border-bottom:4px solid #111}.card:last-child{border-bottom:0}.hero{padding:22px 18px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topbar"><span>INTERNAL MEMO // HR DEPT.</span><span>STATUS: URGENT</span></div>
+  <section class="hero">
+    <span class="stamp">CONFIDENTIAL — ALL STAFF</span>
+    <h1>KDOG’S<br>STAG</h1>
+    <div class="meta"><span>SATURDAY 19TH SEPTEMBER</span><span>LOCATION: MANCHESTER</span><span>MIDDAY → LATE</span><span>ATTENDANCE: ENCOURAGED</span></div>
+    <p><b>MEMO TO ALL:</b> Please RSVP via WhatsApp at your earliest convenience so we can optimise attendance, resource allocation and overall stag-day synergy.</p>
+    <p><b>DRESS CODE OPTIONAL:</b> CE<b>HO.</b> — <i>let’s make hr cream.</i></p>
+  </section>
+
+  <div class="marquee"><div>*** IMPORTANT BUSINESS ANNOUNCEMENT *** SYNERGY *** TEAM BUILDING *** NO FURTHER QUESTIONS *** KDOG’S STAG ***</div></div>
+
+  <section class="grid chronological">
+    <article class="card"><span class="tag">MEETING</span><span class="time">12:00 — 14:00</span><h2>BUSINESS BRUNCH</h2><p><b>LOCATION: MANCHESTER CITY CENTRE</b></p><p><i>A meeting of the minds / icebreakers</i></p><p>Networking. Strategising. Prioritsing Potentially some actual brunch.</p></article>
+    <article class="card"><span class="tag">MANDATORY FUN</span><span class="time">15:00 — 18:00</span><h2>BOARD GROOM GAMES</h2><p><b>LANE 7</b></p><p>Competitive spirit encouraged. Professionalism not guaranteed.</p></article>
+    <article class="card"><span class="tag">R&amp;D</span><span class="time">18:00 — 20:00</span><h2>DRINK TANK</h2><p><b>PUB CRAWL</b></p><p>Now accepting suggested locations. Store them on the word cloud below.</p></article>
+    <article class="card"><span class="tag">REFUEL</span><span class="time">20:00 — 21:00</span><h2>PIZZA PARTY</h2><p>A strategic refuelling exercise.</p></article>
+    <div class="black-divider"></div>
+    <article class="card"><span class="tag">AFTER HOURS</span><span class="time">LATE</span><h2>DRESS DOWN friday ON THE DANCEFLOOR</h2><p><b>(Saturday Edition)</b></p></article>
+  </section>
+
+  <section class="interactive">
+    <div class="panel">
+      <h2>☁ PUB CRAWL WORD CLOUD</h2>
+      <p><b>WHERE SHOULD WE DRINK?</b></p>
+      <form id="wordForm"><input id="wordInput" maxlength="28" placeholder="Type a pub / bar / establishment…" required> <button>+ SUBMIT</button></form>
+      <div id="cloud" class="wordcloud"></div>
+      <div class="notice">LIVE MODE: suggestions are shared with everyone on the site.</div>
+    </div>
+  </section>
+
+  <section class="vote">
+    <h2>🏆 EMPLOYEE OF THE MONTH // VOTE NOW</h2>
+    <p>Who has demonstrated outstanding qualities? Leadership. Team spirit. Questionable decision-making.</p>
+    <div class="voteGrid" id="voteGrid">
+      <button class="candidate" data-name="KDOG">KDOG</button>
+      <button class="candidate" data-name="THE INTERN">THE INTERN</button>
+      <button class="candidate" data-name="THE MANAGER">THE MANAGER</button>
+      <button class="candidate" data-name="QUEER ASSISTANT">QUEER ASSISTANT</button>      <button class="candidate" data-name="OTHER">OTHER / WRITE-IN</button>
+    </div>
+    <p id="voteStatus" class="notice">One vote per browser in demo mode. Winner announced on the night.</p>
+  </section>
+  <div class="footer">© KDOG’S STAG // INTERNAL USE ONLY // PLEASE DO NOT FORWARD TO MANAGEMENT</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// Paste these two values from Supabase Project Settings > API below.
+const SUPABASE_URL = "https://bserydqojkknccwgaupi.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_6T3qOZnGgRgZklwtqsXglA_Ov9oPf9q";
+const db = supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+let words = {};
+
+function render(){
+ const cloud=document.getElementById('cloud'); cloud.innerHTML='';
+ const entries=Object.entries(words).sort((a,b)=>b[1]-a[1]);
+ const max=Math.max(...entries.map(x=>x[1]),1);
+ entries.forEach(([w,n],i)=>{
+   const s=18+Math.round((n/max)*38);
+   const el=document.createElement('span'); el.className='word'; el.textContent=w;
+   el.title=`${n} suggestion${n===1?'':'s'}`; el.style.setProperty('--s',s+'px');
+   el.style.setProperty('--r',(i%3===0?-3:i%3===1?2:0)+'deg'); cloud.appendChild(el);
+ });
+}
+
+async function loadWords(){
+ const {data,error}=await db.from('pub_suggestions').select('name');
+ if(error){ console.error(error); return; }
+ words={};
+ for(const row of data){
+   const name=row.name.trim();
+   if(name.toLowerCase()==='wetherspoons') continue;
+   words[name]=(words[name]||0)+1;
+ }
+ render();
+}
+
+document.getElementById('wordForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const input=document.getElementById('wordInput');
+ const w=input.value.trim().replace(/\s+/g,' ').slice(0,28);
+ if(!w || w.toLowerCase()==='wetherspoons') return;
+ const button=e.submitter || e.target.querySelector('button');
+ button.disabled=true;
+ const {error}=await db.from('pub_suggestions').insert({name:w});
+ button.disabled=false;
+ if(error){ alert('Could not submit that suggestion. Please try again.'); console.error(error); return; }
+ input.value='';
+});
+
+const voterIdKey='kdog_voter_id_v1';
+let voterId=localStorage.getItem(voterIdKey);
+if(!voterId){ voterId=crypto.randomUUID(); localStorage.setItem(voterIdKey,voterId); }
+
+document.querySelectorAll('.candidate').forEach(b=>b.addEventListener('click',async()=>{
+ const status=document.getElementById('voteStatus');
+ if(localStorage.getItem('kdog_vote')) return;
+ document.querySelectorAll('.candidate').forEach(x=>x.disabled=true);
+ const {error}=await db.from('employee_votes').insert({candidate:b.dataset.name,voter_id:voterId});
+ if(error){
+   document.querySelectorAll('.candidate').forEach(x=>x.disabled=false);
+   if(error.code==='23505'){
+     localStorage.setItem('kdog_vote',b.dataset.name);
+     status.textContent='VOTE ALREADY RECORDED. Management has been notified.';
+   } else {
+     status.textContent='Could not record your vote. Please try again.';
+     console.error(error);
+   }
+   return;
+ }
+ localStorage.setItem('kdog_vote',b.dataset.name);
+ b.classList.add('selected');
+ status.textContent='VOTE RECORDED. Management has been notified.';
+}));
+
+const channel=db.channel('pub-suggestions-live')
+ .on('postgres_changes',{event:'*',schema:'public',table:'pub_suggestions'},()=>loadWords())
+ .subscribe();
+
+loadWords();
+</script>
+</body>
+</html>
